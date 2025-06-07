@@ -4,34 +4,35 @@ const presence = new Presence({
 
 const browsingTimestamp = Math.floor(Date.now() / 1000)
 
-let presenceData: {
-  largeImageKey: string,
-  startTimestamp: number,
-  details: string,
-  state: string,
-  buttons?: [ { label: string; url: string }, ( { label: string; url: string } | undefined )? ]
+const presenceData: {
+  largeImageKey: string
+  startTimestamp: number
+  details: string
+  state: string
+  buttons?: [ { label: string, url: string }, ({ label: string, url: string } | undefined)? ]
 } = {
   largeImageKey: 'https://cdn.rcd.gg/PreMiD/websites/W/Websim/assets/logo.png',
   startTimestamp: browsingTimestamp,
   details: 'Playing on Websim',
-  state: "",
-  buttons: undefined
+  state: '',
+  buttons: undefined,
 }
 
-let defaultPaths = [
-  "/",
-  "/play",
-  "/dashboard/creator",
-  "/plan"
+const defaultPaths = [
+  '/',
+  '/play',
+  '/dashboard/creator',
+  '/plan',
 ]
 
 presence.on('iFrameData', (data) => {
   const currentPath = window.location.pathname
-  const pathArray = currentPath.split("/")
-  if (defaultPaths.includes(currentPath) || pathArray.length == 1) return;
+  const pathArray = currentPath.split('/')
+  if (defaultPaths.includes(currentPath) || pathArray.length === 1)
+    return
   presenceData.largeImageKey = data.favicon
-  presenceData.details = (document.title.toLocaleLowerCase().includes("profile")) ? `Viewing ${document.title}`: `Playing ${document.title}`
-  presenceData.state = (data.isOwner) ? `This is their creation`: `By ${data.creator.username}`
+  presenceData.details = (document.title.toLocaleLowerCase().includes('profile')) ? `Viewing ${document.title}` : `Playing ${document.title}`
+  presenceData.state = (data.isOwner) ? `This is their creation` : `By ${data.creator.username}`
 })
 
 presence.on('UpdateData', async () => {
@@ -40,28 +41,32 @@ presence.on('UpdateData', async () => {
     presence.getSetting('btnPrivacy'),
   ])
   const currentPath = window.location.pathname
-  const pathArray = currentPath.split("/")
-  if (defaultPaths.includes(currentPath)) presenceData.largeImageKey = 'https://cdn.rcd.gg/PreMiD/websites/W/Websim/assets/logo.png'
-  if (currentPath === "/") {
-    presenceData.details = "Browsing the Homepage"
-    presenceData.state = ""
-  } else if (currentPath === "/play") {
-    presenceData.details = "Playing Websims"
-    presenceData.state = ""
-  } else if (currentPath === "/dashboard/creator") {
-    presenceData.details = "Viewing their dashboard"
-    presenceData.state = ""
-  } else if (currentPath === "/plan") {
-    presenceData.details = "Browsing Pricing"
-    presenceData.state = ""
+  const pathArray = currentPath.split('/')
+  if (defaultPaths.includes(currentPath))
+    presenceData.largeImageKey = 'https://cdn.rcd.gg/PreMiD/websites/W/Websim/assets/logo.png'
+  if (currentPath === '/') {
+    presenceData.details = 'Browsing the Homepage'
+    presenceData.state = ''
+  }
+  else if (currentPath === '/play') {
+    presenceData.details = 'Playing Websims'
+    presenceData.state = ''
+  }
+  else if (currentPath === '/dashboard/creator') {
+    presenceData.details = 'Viewing their dashboard'
+    presenceData.state = ''
+  }
+  else if (currentPath === '/plan') {
+    presenceData.details = 'Browsing Pricing'
+    presenceData.state = ''
   }
 
   if (showButtons && pathArray.length >= 2 && !defaultPaths.includes(currentPath)) {
     presenceData.buttons = [
       {
-      label: 'View Project',
-      url: `https://websim.ai${pathArray[3] ? currentPath.substring(0, currentPath.lastIndexOf("/")) : currentPath}`,
-      }
+        label: 'View Project',
+        url: `https://websim.ai${pathArray[3] ? currentPath.substring(0, currentPath.lastIndexOf('/')) : currentPath}`,
+      },
     ]
     if (!btnPrivacy && pathArray[3]) {
       const revNum = pathArray[3]
@@ -70,18 +75,12 @@ presence.on('UpdateData', async () => {
         url: `https://websim.ai${currentPath}`,
       }
     }
-  } else {
-    presenceData.buttons = undefined;
+  }
+  else {
+    presenceData.buttons = undefined
   }
   presence.setActivity({
     ...presenceData,
-    buttons: presenceData.buttons
+    buttons: presenceData.buttons,
   })
 })
-
-window.addEventListener('message', (event) => {
-    if (event.data && event.data.type === "p4w.data") {
-        const presenceData = event.data.data;
-        console.log('Received presence data:', presenceData);
-    }
-});
