@@ -4,18 +4,15 @@ const presence = new Presence({
 
 const browsingTimestamp = Math.floor(Date.now() / 1000)
 
-const presenceData: {
-  largeImageKey: string
-  startTimestamp: number
-  details: string
-  state: string
-  buttons?: [ { label: string, url: string }, ({ label: string, url: string } | undefined)? ]
-} = {
-  largeImageKey: 'https://cdn.rcd.gg/PreMiD/websites/W/Websim/assets/logo.png',
+enum Assets {
+  Logo = 'https://cdn.rcd.gg/PreMiD/websites/W/Websim/assets/logo.png',
+}
+
+const presenceData: PresenceData = {
+  largeImageKey: Assets.Logo,
   startTimestamp: browsingTimestamp,
   details: 'Playing on Websim',
-  state: '',
-  buttons: undefined,
+  smallImageText: "Websim"
 }
 
 const defaultPaths = [
@@ -30,7 +27,11 @@ presence.on('iFrameData', (data) => {
   const pathArray = currentPath.split('/')
   if (defaultPaths.includes(currentPath) || pathArray.length === 1)
     return
-  presenceData.largeImageKey = data.favicon
+  if (data.favicon) {
+    presenceData.largeImageKey = data.favicon
+    presenceData.smallImageKey = Assets.Logo
+  }
+  
   presenceData.details = (document.title.toLocaleLowerCase().includes('profile')) ? `Viewing ${document.title}` : `Playing ${document.title}`
   presenceData.state = (data.isOwner) ? `This is their creation` : `By ${data.creator.username}`
 })
@@ -40,25 +41,28 @@ presence.on('UpdateData', async () => {
     presence.getSetting('showButtons'),
     presence.getSetting('btnPrivacy'),
   ])
-  const currentPath = window.location.pathname
+  const currentPath = document.location.pathname
   const pathArray = currentPath.split('/')
-  if (defaultPaths.includes(currentPath))
-    presenceData.largeImageKey = 'https://cdn.rcd.gg/PreMiD/websites/W/Websim/assets/logo.png'
+  if (defaultPaths.includes(currentPath)) {
+    presenceData.largeImageKey = Assets.Logo
+    delete presenceData.smallImageKey
+  }
+
   if (currentPath === '/') {
     presenceData.details = 'Browsing the Homepage'
-    presenceData.state = ''
+    delete presenceData.state
   }
   else if (currentPath === '/play') {
     presenceData.details = 'Playing Websims'
-    presenceData.state = ''
+    delete presenceData.state
   }
   else if (currentPath === '/dashboard/creator') {
     presenceData.details = 'Viewing their dashboard'
-    presenceData.state = ''
+    delete presenceData.state
   }
   else if (currentPath === '/plan') {
     presenceData.details = 'Browsing Pricing'
-    presenceData.state = ''
+    delete presenceData.state
   }
 
   if (showButtons && pathArray.length >= 2 && !defaultPaths.includes(currentPath)) {
