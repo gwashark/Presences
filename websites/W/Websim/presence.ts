@@ -12,7 +12,7 @@ const presenceData: PresenceData = {
   largeImageKey: Assets.Logo,
   startTimestamp: browsingTimestamp,
   details: 'Playing on Websim',
-  smallImageText: "Websim"
+  smallImageText: 'Websim',
 }
 
 const defaultPaths = [
@@ -31,7 +31,6 @@ presence.on('iFrameData', (data) => {
     presenceData.largeImageKey = data.favicon
     presenceData.smallImageKey = Assets.Logo
   }
-  
   presenceData.details = (document.title.toLocaleLowerCase().includes('profile')) ? `Viewing ${document.title}` : `Playing ${document.title}`
   presenceData.state = (data.isOwner) ? `This is their creation` : `By ${data.creator.username}`
 })
