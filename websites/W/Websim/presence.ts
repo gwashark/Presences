@@ -80,7 +80,7 @@ presence.on('UpdateData', async () => {
     }
   }
   else {
-    presenceData.buttons = undefined
+    delete presenceData.buttons
   }
   presence.setActivity({
     ...presenceData,
