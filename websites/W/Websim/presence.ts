@@ -23,7 +23,7 @@ const defaultPaths = [
 ]
 
 presence.on('iFrameData', (data) => {
-  const currentPath = window.location.pathname
+  const currentPath = document.location.pathname
   const pathArray = currentPath.split('/')
   if (defaultPaths.includes(currentPath) || pathArray.length === 1)
     return
