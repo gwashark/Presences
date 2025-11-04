@@ -6,7 +6,7 @@ const presence = new Presence({
 const browsingTimestamp = Math.floor(Date.now() / 1000)
 
 enum ActivityAssets {
-  Logo = 'https://i.imgur.com/2MCaju5.png',
+  Logo = 'https://i.imgur.com/WvtW1u1.png',
 }
 
 presence.on('UpdateData', async () => {
@@ -19,7 +19,7 @@ presence.on('UpdateData', async () => {
   const premid_data_element = document.getElementById('premid')
   if (premid_data_element) {
     details = premid_data_element.dataset.title ?? details
-    state = premid_data_element.dataset.artist ?? state
+    state = `Sung by ${premid_data_element.dataset.artist ?? 'unknown'}`
     artwork = premid_data_element.dataset.artwork ?? artwork
   }
 
