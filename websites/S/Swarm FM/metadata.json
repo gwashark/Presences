@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.premid.app/metadata/1.15",
+  "apiVersion": 1,
+  "author": {
+    "id": "1255528657058009088",
+    "name": "gwashark"
+  },
+  "service": "Swarm FM",
+  "description": {
+    "en": "Swarm FM is a radio station streaming Neurosama and Evil Neuro covers."
+  },
+  "url": "player.sw.arm.fm",
+  "version": "1.0.0",
+  "logo": "https://i.imgur.com/gY8TYSa.png",
+  "thumbnail": "https://i.imgur.com/nnOZ2Ns.png",
+  "color": "#96d090",
+  "category": "music",
+  "tags": [
+    "music",
+    "radio"
+  ]
+}
