@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.premid.app/metadata/1.15",
+  "apiVersion": 1,
+  "author": {
+    "id": "1255528657058009088",
+    "name": "gwashark"
+  },
+  "service": "LetterClash",
+  "description": {
+    "en": "LetterClash is a strategic word battle game where every move matters. Compete against opponents by forming words, capturing territory, and outsmarting your rivals to claim victory."
+  },
+  "url": "letterclash.com",
+  "version": "1.0.0",
+  "logo": "https://i.imgur.com/ZxuzvVj.png",
+  "thumbnail": "https://i.imgur.com/fkgIvOT.png",
+  "color": "#000000",
+  "category": "games",
+  "tags": [
+    "letterclash",
+    "game"
+  ]
+}
