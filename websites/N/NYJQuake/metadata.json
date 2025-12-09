@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.premid.app/metadata/1.15",
+  "apiVersion": 1,
+  "author": {
+    "id": "1255528657058009088",
+    "name": "gwashark"
+  },
+  "service": "NYJQuake",
+  "description": {
+    "en": "Monitor real-time earthquake information in Japan, Taiwan and South Korea."
+  },
+  "url": "page.nyj36.xyz",
+  "version": "1.0.0",
+  "logo": "https://i.imgur.com/7yORozz.png",
+  "thumbnail": "https://i.imgur.com/m0SKDOU.png",
+  "color": "#1f1f1f",
+  "category": "other",
+  "tags": [
+    "earthquake"
+  ]
+}
