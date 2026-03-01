@@ -6,7 +6,7 @@ let lastUrl = document.location.href
 let startTimestamp = Math.floor(Date.now() / 1000)
 
 enum ActivityAssets {
-  Logo = 'https://i.imgur.com/Vc51Wzs.png',
+  Logo = 'https://cdn.rcd.gg/PreMiD/websites/E/Easyfun/assets/logo.png',
 }
 
 function getGameIcon(): string | null {

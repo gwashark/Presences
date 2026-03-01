@@ -14,9 +14,9 @@
     "easyfun.gg"
   ],
   "regExp": "^https?[:][/][/](www[.])?easyfun[.]gg[/]",
-  "version": "2.0.0",
-  "logo": "https://i.imgur.com/Vc51Wzs.png",
-  "thumbnail": "https://i.imgur.com/UD6ZY9j.png",
+  "version": "2.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/E/Easyfun/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/E/Easyfun/assets/thumbnail.png",
   "color": "#00FF66",
   "category": "games",
   "tags": [
