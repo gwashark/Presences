@@ -18,9 +18,9 @@
   },
   "url": "cyber-learning.fr",
   "regExp": "^https?[:][/][/]([a-z0-9-]+[.])*cyber-learning[.]fr[/]",
-  "version": "1.0.0",
-  "logo": "https://cyber-learning.fr/wp-content/uploads/avatars/cropped-user-1-1728625950.png",
-  "thumbnail": "https://cyber-learning.fr/wp-content/uploads/cyber-learning_logo-3.png",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/C/Cyber-Learning/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Cyber-Learning/assets/thumbnail.png",
   "color": "#00ff41",
   "category": "other",
   "tags": [
