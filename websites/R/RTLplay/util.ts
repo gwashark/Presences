@@ -134,8 +134,8 @@ export enum ActivityAssets {
   LiveAnimated = 'https://cdn.rcd.gg/PreMiD/websites/R/RTLplay/assets/2.gif',
   ListeningPaused = 'https://cdn.rcd.gg/PreMiD/websites/R/RTLplay/assets/3.png',
   ListeningLive = 'https://cdn.rcd.gg/PreMiD/websites/R/RTLplay/assets/12.gif',
-  PlayGradient = 'https://imgur.com/PaWs8B8.png',
-  PauseGradient = 'https://imgur.com/U8Nq3El.png',
+  PlayGradient = 'https://cdn.rcd.gg/PreMiD/websites/R/RTLplay/assets/20.png',
+  PauseGradient = 'https://cdn.rcd.gg/PreMiD/websites/R/RTLplay/assets/21.png',
   // Localized
   AdEn = 'https://cdn.rcd.gg/PreMiD/websites/R/RTLplay/assets/4.png',
   AdFr = 'https://cdn.rcd.gg/PreMiD/websites/R/RTLplay/assets/5.png',
