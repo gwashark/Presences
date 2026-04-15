@@ -11,12 +11,18 @@
   },
   "url": "movix.llc",
   "regExp": "^https:\\/\\/([a-z0-9-]+[.])*(movix[.]llc)(?:[/]|$)",
-  "version": "1.0.0",
-  "logo": "https://movix.llc/movix512.png",
-  "thumbnail": "https://movix.llc/thumbnail.png",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/M/Movix/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/M/Movix/assets/thumbnail.png",
   "color": "#dc2626",
   "category": "videos",
-  "tags": ["movies", "series", "anime", "watchparty", "streaming"],
+  "tags": [
+    "movies",
+    "series",
+    "anime",
+    "watchparty",
+    "streaming"
+  ],
   "allowURLOverrides": true,
   "settings": [
     {
