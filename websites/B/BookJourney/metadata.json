@@ -11,9 +11,9 @@
   },
   "url": "bookreading.space",
   "regExp": "^https?[:][/][/]([a-z0-9-]+[.])*bookreading[.]space[/]",
-  "version": "1.0.0",
-  "logo": "https://raw.githubusercontent.com/quetrea/Activities/821ae5755/websites/B/BookJourney/assets/logo-v2.png",
-  "thumbnail": "https://bookreading.space/bookjourneythumbnail.png",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/B/BookJourney/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/B/BookJourney/assets/thumbnail.png",
   "color": "#5865F2",
   "category": "other",
   "tags": [

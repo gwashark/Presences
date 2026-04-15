@@ -48,7 +48,7 @@ const presence = new Presence({
 
 const sessionPrefix = '/s/'
 const stateScriptId = 'bookjourney-premid-state'
-const logoUrl = 'https://raw.githubusercontent.com/quetrea/Activities/821ae5755/websites/B/BookJourney/assets/logo-v2.png'
+const logoUrl = 'https://cdn.rcd.gg/PreMiD/websites/B/BookJourney/assets/logo.png'
 const siteUrl = 'https://bookreading.space'
 
 function buildButtons(sessionId: string): PresenceData['buttons'] {
