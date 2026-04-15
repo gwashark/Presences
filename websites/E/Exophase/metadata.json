@@ -11,9 +11,9 @@
   },
   "url": "exophase.com",
   "regExp": "^https?[:][/][/]([a-z0-9-]+[.])*exophase[.]com[/]",
-  "version": "1.0.0",
-  "logo": "https://i.imgur.com/VoTEoEt.png",
-  "thumbnail": "https://i.imgur.com/pHyO1Bn.png",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/E/Exophase/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/E/Exophase/assets/thumbnail.png",
   "color": "#1E90FF",
   "category": "games",
   "tags": [
