@@ -11,9 +11,9 @@
   },
   "url": "fun.szabee.me",
   "regExp": "^https?[:][/][/]fun[.]szabee[.]me([/]|$)",
-  "version": "1.0.0",
-  "logo": "https://i.imgur.com/uERHbwA.png",
-  "thumbnail": "https://i.imgur.com/IPzIfUO.png",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/S/Szabfun/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/S/Szabfun/assets/thumbnail.png",
   "color": "#FFFFFF",
   "category": "games",
   "tags": [
