@@ -11,9 +11,9 @@
   },
   "url": "duel.com",
   "regExp": "^https?[:][/][/]([a-z0-9-]+[.])*duel[.]com[/]",
-  "version": "1.0.0",
-  "logo": "https://i.imgur.com/vc9ErET.png",
-  "thumbnail": "https://duel.com/assets/header-md-6tXH1jdN.webp",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/D/Duel.com/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/D/Duel.com/assets/thumbnail.webp",
   "color": "#1a2c4a",
   "category": "games",
   "tags": [
