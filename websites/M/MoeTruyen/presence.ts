@@ -1,6 +1,6 @@
 import { Assets } from 'premid'
 
-const LOGO = 'https://i.imgur.com/WWU7hzR.png'
+const LOGO = 'https://cdn.rcd.gg/PreMiD/websites/M/MoeTruyen/assets/logo.png'
 
 const presence = new Presence({
   clientId: '578560798205673482',
