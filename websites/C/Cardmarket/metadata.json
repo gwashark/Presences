@@ -16,9 +16,9 @@
     "cardmarket.com"
   ],
   "regExp": "^https?[:][/][/](www[.])?cardmarket[.]com[/]",
-  "version": "1.0.0",
-  "logo": "https://i.imgur.com/bmVVGUa.jpeg",
-  "thumbnail": "https://i.imgur.com/oRY0a6M.jpeg",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/C/Cardmarket/assets/logo.jpeg",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Cardmarket/assets/thumbnail.jpeg",
   "color": "#014995",
   "category": "games",
   "tags": [
