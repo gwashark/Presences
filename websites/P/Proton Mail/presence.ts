@@ -8,7 +8,7 @@ presence.on('UpdateData', async () => {
   const browsingTimestamp = Math.floor(Date.now() / 1000)
 
   const presenceData: PresenceData = {
-    largeImageKey: 'https://i.imgur.com/rm69OQ1.png',
+    largeImageKey: 'https://cdn.rcd.gg/PreMiD/websites/P/Proton%20Mail/assets/logo.png',
     startTimestamp: browsingTimestamp,
   }
 

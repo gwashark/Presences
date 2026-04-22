@@ -11,12 +11,16 @@
   },
   "url": "mail.proton.me",
   "regExp": "^https?[:][/][/]mail[.]proton[.]me[/]",
-  "version": "1.0.0",
-  "logo": "https://i.imgur.com/rm69OQ1.png",
-  "thumbnail": "https://i.imgur.com/vxBshvq.png",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/P/Proton%20Mail/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/P/Proton%20Mail/assets/thumbnail.png",
   "color": "#42B883",
   "category": "other",
-  "tags": ["email", "privacy", "secure"],
+  "tags": [
+    "email",
+    "privacy",
+    "secure"
+  ],
   "settings": [
     {
       "id": "privacy",
