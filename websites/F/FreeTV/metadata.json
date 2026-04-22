@@ -12,9 +12,9 @@
   },
   "url": "tv.free.fr",
   "regExp": "^https?[:][/][/]tv[.]free[.]fr[/]",
-  "version": "1.0.0",
-  "logo": "https://i.imgur.com/u75ktEz.png",
-  "thumbnail": "https://i.imgur.com/IbHDqcq.jpeg",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/F/FreeTV/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/F/FreeTV/assets/thumbnail.jpeg",
   "color": "#cc0000",
   "category": "videos",
   "tags": [

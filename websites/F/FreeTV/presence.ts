@@ -7,7 +7,7 @@ const presence = new Presence({
 const browsingTimestamp = Math.floor(Date.now() / 1000)
 
 enum ActivityAssets {
-  Logo = 'https://i.imgur.com/u75ktEz.png',
+  Logo = 'https://cdn.rcd.gg/PreMiD/websites/F/FreeTV/assets/logo.png',
 }
 
 function extractSeasonEpisode(title: string) {
