@@ -265,7 +265,7 @@ presence.on('UpdateData', () => {
     startTimestamp: pageStartTimestamp,
   }
 
-  const logoUrl = 'https://i.imgur.com/AfDB5nr.png'
+  const logoUrl = 'https://cdn.rcd.gg/PreMiD/websites/C/ComiKuro/assets/logo.png'
   ;(presenceData as Record<string, unknown>).largeImageKey = shouldUseMangaCover && mangaCoverUrl ? mangaCoverUrl : logoUrl
 
   if (shouldHideMangaCover) {
