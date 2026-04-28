@@ -4,10 +4,10 @@ const presence = new Presence({
 const browsingTimestamp = Math.floor(Date.now() / 1000)
 
 enum Assets {
-  Logo = 'https://raw.githubusercontent.com/ahmednader2019/Activities/2b6e0dbbd/websites/C/CyberDefenders/assets/logo.png',
-  Labs = 'https://raw.githubusercontent.com/ahmednader2019/Activities/2b6e0dbbd/websites/C/CyberDefenders/assets/labs.png',
-  CertifyL1 = 'https://raw.githubusercontent.com/ahmednader2019/Activities/2b6e0dbbd/websites/C/CyberDefenders/assets/ccdl1.png',
-  CertifyL2 = 'https://raw.githubusercontent.com/ahmednader2019/Activities/2b6e0dbbd/websites/C/CyberDefenders/assets/ccdl2.png',
+  Logo = 'https://cdn.rcd.gg/PreMiD/websites/C/CyberDefenders/assets/logo.png',
+  Labs = 'https://cdn.rcd.gg/PreMiD/websites/C/CyberDefenders/assets/0.png',
+  CertifyL1 = 'https://cdn.rcd.gg/PreMiD/websites/C/CyberDefenders/assets/1.png',
+  CertifyL2 = 'https://cdn.rcd.gg/PreMiD/websites/C/CyberDefenders/assets/2.png',
 }
 
 const certDisplayNames: Record<string, string> = {
