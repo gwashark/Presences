@@ -11,9 +11,9 @@
   },
   "url": "404anime.ca",
   "regExp": "^https?[:][/][/]404anime[.]ca[/]",
-  "version": "1.0.0",
-  "logo": "https://404anime.ca/logo.png",
-  "thumbnail": "https://404anime.ca/og-image.png",
+  "version": "1.0.1",
+  "logo": "https://cdn.rcd.gg/PreMiD/websites/0-9/404Anime/assets/logo.png",
+  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/0-9/404Anime/assets/thumbnail.png",
   "color": "#facc15",
   "category": "anime",
   "tags": [
