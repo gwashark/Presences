@@ -22,12 +22,12 @@ presence.on('UpdateData', async () => {
   const logoImage = document.querySelector<HTMLImageElement>('[id^="PARAGRAPH-LOGO"]')
 
   const logoUrl = isMagentaMusik
-    ? 'https://i.ibb.co/Gf51vGdb/Magenta-Musik.png'
+    ? 'https://cdn.rcd.gg/PreMiD/websites/M/MagentaTV%20Deutschland/assets/0.png'
     : logoImage?.src
       ?.replace(/x=\d+/, 'x=250')
       ?.replace(/y=\d+/, 'y=250')
       ?.replace('ar=keep', 'ar=ignore')
-      ?? 'https://i.ibb.co/JjPZDjqb/Magenta-TV.png'
+      ?? 'https://cdn.rcd.gg/PreMiD/websites/M/MagentaTV%20Deutschland/assets/logo.png'
 
   const isLive
     = !isMagentaMusik
