@@ -7,7 +7,7 @@ const browsingTimestamp = Math.floor(Date.now() / 1_000)
 const heartbeatAttribute = 'data-premid-extension-heartbeat'
 
 enum ActivityAssets {
-  Logo = 'https://i.imgur.com/RWdxBEH.png',
+  Logo = 'https://cdn.rcd.gg/PreMiD/websites/H/HeiwaStream/assets/logo.png',
 }
 
 const supportedHosts = new Set([
