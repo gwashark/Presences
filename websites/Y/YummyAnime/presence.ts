@@ -458,7 +458,7 @@ presence.on('UpdateData', async () => {
   const { pathname, search } = document.location
 
   const presenceData: Record<string, unknown> = {
-    largeImageKey: 'https://i.imgur.com/397AqsF.png',
+    largeImageKey: 'https://cdn.rcd.gg/PreMiD/websites/Y/YummyAnime/assets/logo.png',
     largeImageText: 'YummyAnime',
     type: ActivityType.Watching,
   }
