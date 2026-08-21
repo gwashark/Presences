@@ -138,6 +138,13 @@ presence.on('UpdateData', async () => {
     }
   }
 
+  if (await presence.getSetting<boolean>('privacy')) {
+    presenceData.details = 'Browsing Amazon'
+    delete presenceData.state
+    delete presenceData.smallImageKey
+    delete presenceData.smallImageText
+  }
+
   if (presenceData.details)
     presence.setActivity(presenceData)
   else presence.setActivity()
